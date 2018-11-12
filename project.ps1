@@ -1,0 +1,1 @@
+#here we will be making a script to collect logs in windows
