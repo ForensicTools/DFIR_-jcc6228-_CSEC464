@@ -22,6 +22,7 @@ echo ""
 echo "Administrator account activity:"
 Get-EventLog -Log System -UserName "Administrator" | Group-Object -Property "UserName" -noelement | Format-Table Count, Name -Auto
 Get-EventLog -Log System -UserName "Administrator"
+echo ""
 $Aug26 = Get-Date 8/26/18
 $Sep26 = Get-Date 9/26/08
 Get-EventLog -Log "system" -EntryType Error -After $Aug26 -before $Sep26
