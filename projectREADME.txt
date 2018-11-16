@@ -1,4 +1,5 @@
 This README will be describing what functions our script is implementing and how it works.
+Project files consist of project.ps1, event_gather.ps1 and this readme.
 Our PowerShell script is designed to collect different types of windows logs and display them for easy viewing.
 This tool has potential use in the forensics community because often logging in windows is very difficult to interpret and requires a knowledge of PowerShell.
 Once this tool is complete, it would serve an investigator as a time saver, as many different PowerShell commands are not intuitive and require a bit of research, this tool allows the whole process to be one and done. Once the script is fitted with tools and commands to reveal certain insights about windows logs, it can then be used and re-used on a multitude of machines for easy data collection.
@@ -10,3 +11,6 @@ All of the functions below regard both the Application and the System event logs
 3) Display all entries from the logs that contain an error.
 4) Show account activity in the System log for the username "Administrator."
 5) Show logs made between two specific dates.
+6) Event-gather provides user directed input to various features to direct event log collection.
+
+For future development, it is our plan to incorporate both of these files together, to make a tool that is both user directed and contains all the features necessary for efficient data collection.
