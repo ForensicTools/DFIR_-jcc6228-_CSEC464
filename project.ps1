@@ -19,9 +19,9 @@ echo ""
 echo "Errors in Application logs:"
 Get-EventLog -LogName Application -EntryType Error
 echo ""
-echo "Administrator account activity:"
-Get-EventLog -Log System -UserName "Administrator" | Group-Object -Property "UserName" -noelement | Format-Table Count, Name -Auto
-Get-EventLog -Log System -UserName "Administrator"
+#echo "Administrator account activity:"
+#Get-EventLog -Log System -UserName "Administrator" | Group-Object -Property "UserName" -noelement | Format-Table Count, Name -Auto
+#Get-EventLog -Log System -UserName "Administrator"
 echo ""
 $Aug26 = Get-Date 8/26/18
 $Sep26 = Get-Date 9/26/08
